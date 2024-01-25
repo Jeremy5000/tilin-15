@@ -13,8 +13,72 @@
 </head>
 <body>
     <!-- <p style="font-size: 30px;">soy un texto</p> -->
+
+    <!-- selectores -->
     <h1>Selector por elemento</h1>
     <h3 class="selector-clase">Selector por clase</h3>
-    <p id="selector-id">Selector por Id</p>
+    <p id="selector-id">Selector por Id</p> 
+
+    <!-- pseudo clases -->
+    <h2>pseudo clases</h2>
+    <button>boton con :hover</button>
+    <div class="pseudo-clase-hover">hola este un div con :hover</div>
+    <a class="pseudoc-clase-link-hover" href="">este es un link con :hover</a>
+    <input type="text">
+        
+    <h2>hijos</h2>
+    <div class="hijos-pseudo">
+        <p class="p">parafo 1</p>
+        <p class="p">parafo 2</p>
+        <p class="p">parafo 3</p>
+        <p class="p">parafo 4</p>
+        <p class="p">parafo 5</p>
+        <p class="p">parafo 6</p>
+    </div>
+        <!-- pseudo elementos -->
+        <h2>::before</h2>
+        <div class="prueba-before">before</div>
+        <h2>::after</h2>
+        <div class="prueba-after">after</div>
+        <h2>::first letter</h2>
+        <p class="prueba-first-letter">hola soy un parrafo</p>
+
+        <!-- pseudo clase de falidacion -->
+
+        <form action="">
+            <input class="input1" type="text" placeholder="caja de texto">
+            <input class="input1" type="text" placeholder="caja de texto" required> 
+            <input  type="submit" >
+        </form>
+        <!-- selectores combinados y muliples -->
+        <div class="padre">
+            <ul>
+                <li>item1</li>
+                <li class="seleciona-este-li">item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ul>
+        </div>
+        
+        <!-- herencia -->
+        <h2>Herencia</h2>
+        <div class="container">
+            <p>parrafo padre</p>
+            <div class="child">
+                <p>parrafo hijo</p>
+            </div>
+        </div>
+
+        <!-- cascada -->
+        <h2>Cascada</h2>
+        <div class="miparrafo">mi parrafo</div>
+
+        <!-- unidades de medida -->
+        <h2>unidades de medida</h2>
+        <div class="caja1">caja 1</div>
+        <div class="caja2">
+            caja 2
+        <div class="caja3">caja 3</div>
+        </div>
 </body>
 </html>
