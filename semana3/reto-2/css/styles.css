@@ -1,10 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Ubuntu";
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu";
 }
 
 .flex {
@@ -32,15 +33,83 @@ body {
 .container_box {
     background-color: white;
     height: 70vh;
-    width: 70%;
+    width: 50%;
+    gap: 40px;
 }
 
-.container_box div:first-child {
+.container_box > div:first-child {
     width: 25%;
     background: url("../assets/images/bg-sidebar-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
+
+.text-white {
+    color: white;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.step_container {
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.step_circle {
+    border: solid white 1px;
+    padding: 9px;
+    border-radius: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.step_circle:hover {
+    color: black;
+    background-color: hsl(206, 94%, 87%);
+}
+
+.step_title {
+    text-transform: uppercase;
+    color: hsl(217, 100%, 97%);
+    font-size: 13px;
+}
+
+.step_description {
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+
+.title__info {
+    font-size: 36px;
+}
+
+.description__info {
+    margin-top: 10px;
+    color: hsl(229,24% ,87% );
+}
+
+.container__input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container__input > input {
+    font-family: "Ubuntu";
+    padding: 12px;
+}
+
+
 
 
