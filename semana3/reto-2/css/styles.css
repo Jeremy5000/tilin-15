@@ -108,8 +108,89 @@ body {
 .container__input > input {
     font-family: "Ubuntu";
     padding: 12px;
+    font-size: 16px;
+    border: solid 1px hsl(229, 24%, 87%);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
 }
 
+.container__input > span {
+    color: hsl(213, 96%, 18%);
+}
 
+.container__input > input:hover {
+    border: solid 1px hsl(243, 100%, 62%);
+}
 
+.container__button {
+    margin-top: 40px;
+    text-align: right;
+}
 
+.button__info {
+    border: none;
+    background-color: hsl(213, 96%, 18%);
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .p-25 {
+        padding: 0;
+    }
+    .radius-md {
+        border-radius: 0;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .container_box {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+        gap: 0;
+    }
+
+    .container_box > div:first-child {
+        width: 100%;
+        background: url(../assets/images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+    }
+
+    .steps__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .step_circle{
+        height: 10px;
+        align-items: center;
+        display: flex;
+        width: 10px;
+    }
+
+    .step_title {
+        display: none; 
+    }
+
+    .step_description {
+        display: none;
+    }
+
+}

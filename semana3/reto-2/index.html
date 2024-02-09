@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../reto-2/css/fonts.css" />
     <link rel="stylesheet" href="../reto-2/css/styles.css" />
   </head>
+
   <body>
     <section class="container flex">
       <div class="container_box flex radius-md p-25">
-        <div class="radius-md p-20">
+        <div class="radius-md p-20 steps__container">
           <div class="flex step_container text-white uppercase">
             <div>
               <span class="step_circle">1</span>
@@ -58,10 +59,35 @@
               Please privide your name, email address, and phone number.
             </p>
             <form action="">
-                <label class="container__input" for="">
-                    <span>Name</span>
-                    <input type="text" placeholder="e.g. Jeremy Arellano">
-                </label>
+              <label class="container__input" for="">
+                <span>Name</span>
+                <input
+                  type="text"
+                  autocomplete="new-password"
+                  placeholder="e.g. Jeremy Arellano"
+                />
+              </label>
+
+              <label class="container__input" for="">
+                <span>Email Addreess</span>
+                <input
+                  type="email"
+                  autocomplete="new-password"
+                  placeholder="e.g. Jeremy@gmial.com"
+                />
+              </label>
+
+              <label class="container__input" for="">
+                <span>Phone Number</span>
+                <input
+                  type="tel"
+                  autocomplete="new-password"
+                  placeholder="e.g. +51 918753951"
+                />
+              </label>
+              <div class="container__button">
+                <button class="button__info text-white"> Next step</button>
+              </div>
             </form>
           </div>
         </div>
